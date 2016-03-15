@@ -23,7 +23,7 @@ split -n l/$NWK -d -a 3 targets-all targets.
 
 # start processes to do work
 for worker in `seq 0 $(($NWK-1))`; do
-    ./frame-dl-worker.sh $worker `printf 'targets.%03d' $worker` $DST $RES $FPS $NFR $LOC &
+    ./frame-dl-worker.sh $worker `printf 'targets.%03d' $worker` $DST $FPS $NFR $LOC &
 done 
 
 # trap on exit and call kill_workers()

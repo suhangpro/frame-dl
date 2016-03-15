@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -lt 7 ]; then
+if [ $# -lt 6 ]; then
     echo Usage: frame-dl-worker.sh WID LST DST FPS NFR LOC \[MIN_DURATION:-3]
     exit
 fi
